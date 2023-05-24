@@ -1,6 +1,42 @@
 
 
 
+
+// ANIMATION ABOUT ME  
+
+
+
+// reveal images when mouse over 
+setTimeout(function(){
+  $(".photographe").mouseover(function () { 
+    gsap.to(".groupe-img img", {
+      x: 100,
+      margin: '0 10px 0',
+      duration: 1.8,
+      opacity: 1,
+      rotate: 0, 
+      stagger: .15
+    }); 
+  });
+  $(".photographe").mouseout(function () { 
+    gsap.to(".groupe-img img", {
+      x: 1100,
+      margin: '0 -140px 0',
+      duration: 2,
+      opacity: 1,
+      rotate: 20, 
+      stagger: .15
+    }); 
+  });   
+});
+
+
+
+
+
+
+
+
 // ANIMATION FOOTER   - SLIDE DOWN TO UP 
 
 gsap.registerPlugin(ScrollTrigger); 
