@@ -107,7 +107,7 @@ body {
     height: 30vh;
     margin-bottom: 4%;
   }
-  .landing-page .toplines .topline1 {
+  .landing-page .toplines s .topline1 {
     letter-spacing: 5px;
     padding: 45px 8px;
     margin-bottom: 3%;
@@ -137,7 +137,7 @@ body {
     font-size: 1.5em;
   }
   .wrapper-img-superposed {
-    z-index: -1;
+    z-index: -10;
   }
   .wrapper-img-superposed .shape {
     width: 250px;
@@ -374,7 +374,7 @@ body {
     transform: translateX(-50%);
   }
 }
-/* SECTION 3 - ABOUT  */
+/* SECTION 2 - ABOUT ME */
 .about {
   background-color: #806c6c;
   margin-top: 70px;
@@ -430,7 +430,7 @@ body {
   height: 100%;
   width: 100%;
   border-left: 3px solid #251a21;
-  animation: typing 5s steps(12) infinite;
+  animation: typing 5s steps(10) infinite;
 }
 
 .appear-text {
@@ -440,7 +440,7 @@ body {
 
 @keyframes typing {
   40%, 60% {
-    left: calc(100% + 10px);
+    left: calc(100% + 1px);
   }
   100% {
     left: 0;
@@ -460,6 +460,42 @@ body {
   }
 }
 /*  media queries  */
+@media screen and (max-width: 576px) {
+  .about {
+    margin-top: 100px;
+    height: 100vh;
+  }
+  .about .about-content {
+    z-index: 10;
+    padding-top: 50px;
+    padding-left: 10px;
+  }
+  .about .about-content .about-title {
+    font-size: 2em;
+    line-height: 55px;
+    letter-spacing: 4px;
+  }
+  .about .bottom-text h4 {
+    font-size: 1em;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+    line-height: 40px;
+    width: 100%;
+  }
+  /* Animation - effet typing  */
+  .wrapper-2 .dynamics-text {
+    line-height: 30px;
+    height: 30px;
+  }
+  .wrapper-2 .dynamics-text li {
+    font-size: 1em;
+  }
+  .wrapper-2 p {
+    font-size: 1em;
+    letter-spacing: 2px;
+    line-height: 30px;
+  }
+}
 @media screen and (min-width: 576px) {
   .about {
     height: 100vh;
@@ -513,17 +549,19 @@ body {
     padding-left: 40px;
   }
   .about .about-content .about-title {
-    font-size: 2.8em;
+    font-size: 3em;
     line-height: 68px;
     letter-spacing: 10px;
+    padding-top: 8%;
+    padding-bottom: 4%;
   }
   .about .groupe-img {
-    top: 3%;
-    right: 0;
+    top: 5%;
+    right: 12;
     z-index: 1;
   }
   .about .groupe-img .about-img {
-    width: 150px;
+    width: 175px;
   }
   .about .bottom-text h4 {
     font-size: 1.1em;
@@ -564,6 +602,8 @@ body {
     font-weight: lighter;
     line-height: 80px;
     letter-spacing: 14px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .about .groupe-img {
     top: 3%;
@@ -616,6 +656,8 @@ body {
     font-size: 6em;
     line-height: 120px;
     letter-spacing: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .about .groupe-img {
     top: 5%;
@@ -651,6 +693,79 @@ body {
     line-height: 50px;
   }
 }
+/* SECTION 3 - GALLERIE  */
+.galery-photos {
+  /* SIZE IMAGE COVER GALERIE BREAKPOINTS */
+}
+.galery-photos .cover-img1 {
+  display: block;
+}
+.galery-photos .cover-img2 {
+  display: block;
+}
+.galery-photos .box-img {
+  position: relative;
+  transition: 0.5s ease;
+}
+.galery-photos .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: #272320;
+  background: linear-gradient(to bottom right, #272320, #AD9270);
+}
+.galery-photos .caption {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.galery-photos .box-img:hover .overlay {
+  opacity: 0.6;
+}
+@media screen and (max-width: 576px) {
+  .galery-photos .galery-photos {
+    margin-top: 150px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .galery-photos .gallerie-section {
+    margin-top: 250px;
+    margin-bottom: 200px;
+    height: 100vh;
+  }
+  .galery-photos .gallerie-section .cover-img1 {
+    width: 695px;
+    height: 50vh;
+  }
+  .galery-photos .gallerie-section .cover-img2 {
+    min-width: 680px;
+    height: 50vh;
+  }
+  .galery-photos .gallerie-section .cover-img3 {
+    min-width: 680px;
+    height: 50vh;
+  }
+  .galery-photos .gallerie-section .cover-img4 {
+    min-width: 680px;
+    height: 50vh;
+  }
+  .galery-photos .gallerie-section .cover-img5 {
+    min-width: 680px;
+    height: 50vh;
+  }
+  .galery-photos .gallerie-section .cover-img6 {
+    min-width: 680px;
+    height: 50vh;
+  }
+}
+
 /* SECTION 4 - FOOTER  */
 .footer-informations {
   margin-top: 150px;
