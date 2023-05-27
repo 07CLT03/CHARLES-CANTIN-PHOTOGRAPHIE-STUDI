@@ -1,3 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Vujahday+Script&display=swap");
+/* SECTION 1 - NAVBAR */
+.navbar .nav-item {
+  position: relative;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  height: 2px;
+  width: 0;
+  transition: 0.4s ease-in;
+}
+
+.nav-link:hover {
+  color: #806c6c;
+}
+
+.nav-item:hover::before {
+  width: 85%;
+  background-color: #806c6c;
+}
+
+/*  MEDIA QUERIES NAVBAR LINK */
+@media screen and (min-width: 992px) {
+  .navbar .nav-item {
+    font-size: 1.1em;
+    padding: 15px 13px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .navbar .nav-item {
+    font-size: 1.3em;
+    padding: 15px 22px;
+  }
+}
 .information-panel {
   background-color: #bba691;
   width: 100%;
@@ -15,4 +55,54 @@
 }
 .information-panel .card .card-text {
   font-size: 1.2em;
+}
+
+/* SECTION 5 - FOOTER  */
+.footer-informations {
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+.footer-informations .card-title {
+  font-family: "Vujahday Script", cursive;
+  word-spacing: 3.58px;
+  letter-spacing: 3.5px;
+}
+.footer-informations .footer-card-link:hover {
+  font-weight: bolder;
+}
+.footer-informations .footer-card-link:hover a:hover {
+  color: #806c6c;
+}
+.footer-informations .bi-facebook {
+  color: #3b5998;
+  color: rgb(59, 89, 152);
+}
+.footer-informations .bi-linkedin {
+  color: #007bb6;
+  color: rgb(0, 123, 182);
+}
+.footer-informations .bi-instagram {
+  color: #bc2a8d;
+  color: rgb(188, 42, 141);
+}
+.footer-informations .bi-twitter {
+  color: #00aced;
+  color: rgb(0, 172, 237);
+}
+
+@media screen and (max-width: 576px) {
+  .copyright {
+    font-size: 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card-title {
+    font-size: 1.8em;
+  }
+}
+.copyright {
+  background-color: #806c6c;
+}
+.copyright .CL {
+  font-family: "Vujahday Script", cursive;
 }/*# sourceMappingURL=contact.css.map */
