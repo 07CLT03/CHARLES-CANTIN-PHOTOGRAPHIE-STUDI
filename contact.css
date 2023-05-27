@@ -1,0 +1,18 @@
+.information-panel {
+  background-color: #bba691;
+  width: 100%;
+  height: 40vh;
+}
+.information-panel .card {
+  background-color: transparent;
+  border: none;
+}
+.information-panel .card .bi {
+  font-size: 4em;
+}
+.information-panel .card .card-title {
+  font-size: 1.7em;
+}
+.information-panel .card .card-text {
+  font-size: 1.2em;
+}/*# sourceMappingURL=contact.css.map */

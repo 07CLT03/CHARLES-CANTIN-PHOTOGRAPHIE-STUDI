@@ -86,6 +86,6 @@ gsap.from(".footer-card-right",{
   opacity:0,  
   duration:2, 
   scale:0.5,
-  delay:2.2,
+  delay:2.6,
   scrollTrigger: ".animation-trigger-slide-in"
 })
