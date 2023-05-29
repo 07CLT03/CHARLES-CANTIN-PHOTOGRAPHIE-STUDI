@@ -7,6 +7,12 @@ $quote-police: 'Homemade Apple', cursive;
 $main-title-police:'Vujahday Script', cursive;
 
 
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* SECTION 1 - NAVBAR */
 
 .navbar {
@@ -61,34 +67,227 @@ $main-title-police:'Vujahday Script', cursive;
 }
 
 
+/* SECTION 2 - LANDING PANEL */
 
-
-
-
-
-
-
-
-
-
-
-.information-panel {
-  background-color: #bba691;
+.landing-panel {
+  margin-top: 50px;
+  background-image: url(images/contactcover2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   width: 100%;
-  height: 40vh;
+  height: 65vh;
 
-    .card {
-      background-color: transparent;
-      border: none;
+    h1 {
+      font-weight: normal;
+      font-family: $main-title-police;
+    }
+}
 
-        .bi {
-          font-size: 4em;
+
+@media screen and (max-width:576px) {
+
+  .landing-panel {
+    width: 100%;
+    height: 27vh;
+  
+      h1 {
+        letter-spacing: 10px;
+        font-size: 2.5em;
+      }
+  }
+}
+
+@media screen and (min-width:576px) {
+
+  .landing-panel {
+    width: 100%;
+    height: 40vh;
+  
+      h1 {
+        letter-spacing: 9px;
+        font-size: 3em;
+        font-weight: normal;
+      }
+  }
+}
+
+@media screen and (min-width:758px) {
+
+  .landing-panel {
+
+      h1 {
+        letter-spacing: 30px;
+        font-size: 4em;
+      }
+  }
+}
+
+@media screen and (min-width:992px) {
+
+  .landing-panel {
+
+      h1 {
+        letter-spacing: 30px;
+        font-size: 4.5em;
+      }
+  }
+}
+
+@media screen and (min-width:1300px) {
+
+  .landing-panel {
+
+      h1 {
+        letter-spacing: 30px;
+        font-size: 5em;
+      }
+  }
+}
+
+
+
+/* SECTION 3 - FORM SECTION */
+
+@media screen and (max-width:576px) {
+
+  .contact-form {
+    width: 100%;
+  
+      h2 {
+        letter-spacing: 4px;
+        font-size: 1.4em;
+        font-weight: normal;
+        padding: 2% auto;
+        line-height: 40px;
+      }
+
+      .left-side-form {
+        margin: auto 8%;
+        width: 85%;
+    
+      }
+  }
+
+  .form-picture {
+
+    img {
+      width: 85%;
+      height: 80%;
+    }
+  }
+}
+
+@media screen and (min-width:576px) {
+
+  .contact-form {
+    width: 100%;
+  
+      h2 {
+        letter-spacing: 10px;
+        font-size: 1.7em;
+        font-weight: normal;
+        padding: 2% auto;
+      }
+
+      .left-side-form {
+        margin: auto 15%;
+        width: 75%;
+    
+      }
+
+      .right-side-form {
+
+
+        img {
+          width: 470px;
+          height: 600px;
         }
-        .card-title {
-          font-size: 1.7em;
+    }
+  }
+}
+
+@media screen and (min-width:768px) {
+
+  .contact-form {
+    width: 100%;
+  
+      h2 {
+        letter-spacing: 10px;
+        font-size: 1.4em;
+        font-weight: normal;
+        padding: 2% auto;
+      }
+
+      .left-side-form {
+        width: 44%;
+        margin: auto 2%;
+      }
+  }
+
+  .right-side-form {
+
+    width: 48%;
+    overflow: hidden;
+
+    img {
+      width: 330px;
+      height: 600px;
+    }
+  }
+}
+
+@media screen and (min-width:992px) {
+
+  .contact-form {
+    width: 100%;
+  
+      h2 {
+        letter-spacing: 7px;
+        font-size: 1.8em;
+        font-weight: normal;
+      }
+  }
+
+  .left-side-form {
+    width: 45%;
+
+  }
+
+  .right-side-form {
+
+        img {
+          width: 420px;
+          height: 650px;
         }
-        .card-text {
-          font-size: 1.2em;
+    }
+
+}
+
+@media screen and (min-width:1300px) {
+
+  .contact-form {
+    width: 100%;
+  
+      h2 {
+        letter-spacing: 10px;
+        font-size: 2.1em;
+        font-weight: normal;
+      }
+
+      .left-side-form {
+        width: 28%;
+      }
+  
+  }
+
+
+  .right-side-form {
+    width: 32%;
+
+        img {
+          width: 560px;
+          height: 800px;
         }
     }
 }
@@ -97,9 +296,111 @@ $main-title-police:'Vujahday Script', cursive;
 
 
 
+/* SECTION 3 - INFORMATION CARDS */
+
+.information-panel {
+  overflow: hidden;
+  background-color: #bba691;
+  width: 100%;
+    .card {
+      background-color: transparent;
+      border: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+  .information-panel {
+    height: 97vh;
+
+    .card {
+      margin-top: 2%;
+      height: 11rem;
+
+        .bi {
+          font-size: 1.8em;
+        }
+        .card-title {
+          font-size: 1.2em;
+        }
+        .card-text {
+          font-size: 1em;
+        }
+    }
+  }  
+}
+
+@media screen and (min-width:576px) {
+  .information-panel {
+    width: 100%;
+    height: 60vh;
+  
+      .card {
+        min-width: 17rem;
+        width: 17rem;
+        height: 14rem;
+        padding-top: 30px;
+  
+          .bi {
+            font-size: 2em;
+          }
+          .card-title {
+            font-size: 1.3em;
+          }
+          .card-text {
+            font-size: 1.1em;
+          }
+      }
+  }
+}
 
 
+@media screen and (min-width:992px) {
+  .information-panel {
+    width: 100%;
+    height: 35vh;
+    padding: 0;
+  
+      .card {
+        width: 10rem;
+          .bi {
+            font-size: 2.5em;
+          }
+          .card-title {
+            font-size: 1.5em;
+          }
+          .card-text {
+            font-size: 1.2em;
+          }
+      }
+  }
+}
 
+@media screen and (min-width:1300px) {
+  .information-panel {
+    width: 100%;
+    height: 35vh;
+  
+      .card {
+        width: 24rem;
+          .bi {
+            font-size: 3em;
+          }
+          .card-title {
+            font-size: 1.8em;
+          }
+          .card-text {
+            font-size: 1.2em;
+          }
+      }
+  }
+}
+
+/* SECTION 4 - GOOGLE CARD  */
+
+.maps-card {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
 
 
 

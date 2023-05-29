@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Vujahday+Script&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* SECTION 1 - NAVBAR */
 .navbar .nav-item {
   position: relative;
@@ -38,23 +44,250 @@
     padding: 15px 22px;
   }
 }
+/* SECTION 2 - LANDING PANEL */
+.landing-panel {
+  margin-top: 50px;
+  background-image: url(images/contactcover2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 65vh;
+}
+.landing-panel h1 {
+  font-weight: normal;
+  font-family: "Vujahday Script", cursive;
+}
+
+@media screen and (max-width: 576px) {
+  .landing-panel {
+    width: 100%;
+    height: 27vh;
+  }
+  .landing-panel h1 {
+    letter-spacing: 10px;
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 576px) {
+  .landing-panel {
+    width: 100%;
+    height: 40vh;
+  }
+  .landing-panel h1 {
+    letter-spacing: 9px;
+    font-size: 3em;
+    font-weight: normal;
+  }
+}
+@media screen and (min-width: 758px) {
+  .landing-panel h1 {
+    letter-spacing: 30px;
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .landing-panel h1 {
+    letter-spacing: 30px;
+    font-size: 4.5em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .landing-panel h1 {
+    letter-spacing: 30px;
+    font-size: 5em;
+  }
+}
+/* SECTION 3 - FORM SECTION */
+@media screen and (max-width: 576px) {
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form h2 {
+    letter-spacing: 4px;
+    font-size: 1.4em;
+    font-weight: normal;
+    padding: 2% auto;
+    line-height: 40px;
+  }
+  .contact-form .left-side-form {
+    margin: auto 8%;
+    width: 85%;
+  }
+  .form-picture img {
+    width: 85%;
+    height: 80%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form h2 {
+    letter-spacing: 10px;
+    font-size: 1.7em;
+    font-weight: normal;
+    padding: 2% auto;
+  }
+  .contact-form .left-side-form {
+    margin: auto 15%;
+    width: 75%;
+  }
+  .contact-form .right-side-form img {
+    width: 470px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form h2 {
+    letter-spacing: 10px;
+    font-size: 1.4em;
+    font-weight: normal;
+    padding: 2% auto;
+  }
+  .contact-form .left-side-form {
+    width: 44%;
+    margin: auto 2%;
+  }
+  .right-side-form {
+    width: 48%;
+    overflow: hidden;
+  }
+  .right-side-form img {
+    width: 330px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form h2 {
+    letter-spacing: 7px;
+    font-size: 1.8em;
+    font-weight: normal;
+  }
+  .left-side-form {
+    width: 45%;
+  }
+  .right-side-form img {
+    width: 420px;
+    height: 650px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form h2 {
+    letter-spacing: 10px;
+    font-size: 2.1em;
+    font-weight: normal;
+  }
+  .contact-form .left-side-form {
+    width: 28%;
+  }
+  .right-side-form {
+    width: 32%;
+  }
+  .right-side-form img {
+    width: 560px;
+    height: 800px;
+  }
+}
+/* SECTION 3 - INFORMATION CARDS */
 .information-panel {
+  overflow: hidden;
   background-color: #bba691;
   width: 100%;
-  height: 40vh;
 }
 .information-panel .card {
   background-color: transparent;
   border: none;
 }
-.information-panel .card .bi {
-  font-size: 4em;
+
+@media screen and (max-width: 576px) {
+  .information-panel {
+    height: 97vh;
+  }
+  .information-panel .card {
+    margin-top: 2%;
+    height: 11rem;
+  }
+  .information-panel .card .bi {
+    font-size: 1.8em;
+  }
+  .information-panel .card .card-title {
+    font-size: 1.2em;
+  }
+  .information-panel .card .card-text {
+    font-size: 1em;
+  }
 }
-.information-panel .card .card-title {
-  font-size: 1.7em;
+@media screen and (min-width: 576px) {
+  .information-panel {
+    width: 100%;
+    height: 60vh;
+  }
+  .information-panel .card {
+    min-width: 17rem;
+    width: 17rem;
+    height: 14rem;
+    padding-top: 30px;
+  }
+  .information-panel .card .bi {
+    font-size: 2em;
+  }
+  .information-panel .card .card-title {
+    font-size: 1.3em;
+  }
+  .information-panel .card .card-text {
+    font-size: 1.1em;
+  }
 }
-.information-panel .card .card-text {
-  font-size: 1.2em;
+@media screen and (min-width: 992px) {
+  .information-panel {
+    width: 100%;
+    height: 35vh;
+    padding: 0;
+  }
+  .information-panel .card {
+    width: 10rem;
+  }
+  .information-panel .card .bi {
+    font-size: 2.5em;
+  }
+  .information-panel .card .card-title {
+    font-size: 1.5em;
+  }
+  .information-panel .card .card-text {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .information-panel {
+    width: 100%;
+    height: 35vh;
+  }
+  .information-panel .card {
+    width: 24rem;
+  }
+  .information-panel .card .bi {
+    font-size: 3em;
+  }
+  .information-panel .card .card-title {
+    font-size: 1.8em;
+  }
+  .information-panel .card .card-text {
+    font-size: 1.2em;
+  }
+}
+/* SECTION 4 - GOOGLE CARD  */
+.maps-card {
+  filter: grayscale(100%);
 }
 
 /* SECTION 5 - FOOTER  */

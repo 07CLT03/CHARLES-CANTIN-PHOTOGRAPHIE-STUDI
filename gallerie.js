@@ -141,19 +141,27 @@ btn6.addEventListener('click', ()=> {
 });
 
 
-// remove images + add new text 
 btn7.addEventListener('click', ()=> {
+  img1.src = 'images/bapteme/bapteme1.jpg';
+  img2.src = 'images/bapteme/bapteme2.jpg';
+  img3.src = 'images/bapteme/bapteme4.jpg';
+  img4.src = 'images/bapteme/bapteme3.jpg';
+  img5.src = 'images/bapteme/bapteme6.jpg';
+  img6.src = 'images/bapteme/bapteme7.jpg';
+  img7.src = 'images/bapteme/bapteme8.jpg';
+  document.querySelector('.citation').innerHTML= ' " Les photographies sont les trésors de nos familles. "'
+  document.querySelector('.author-citation').innerHTML= 'Thibault Chappe'
+  // restart animation on each button clicked
+  tween1.restart();
+  tween2.restart();
+  tween3.restart();
+  tween4.restart();
+  tween5.restart();
+  tween6.restart();
+  tween7.restart();
+});
 
-  let gallerie = document.querySelector('.img-wrapper');
 
-  gallerie.remove(); 
-
-  let newDiv= document.createElement(".div");
-  div.className = 'Error-page'
-  div.innerHTML = '<h3> Page en cours de construction,revenez plus tard </h3>'; 
-  document.body.appendChild(div);
-
-}); 
 
 
 // animation 1 -  slide in images
