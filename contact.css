@@ -44,15 +44,16 @@
     padding: 15px 22px;
   }
 }
-/* SECTION 2 - LANDING PANEL */
+/* SECTION 1 - LANDING PANEL */
 .landing-panel {
   margin-top: 50px;
-  background-image: url(images/contactcover2.jpg);
+  /*background-image: url(images/contactcover2.jpg);*/
+  background-image: linear-gradient(rgba(87, 55, 19, 0.726), rgba(114, 103, 86, 0.438)), url(images/slice-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 65vh;
+  height: 80vh;
 }
 .landing-panel h1 {
   font-weight: normal;
@@ -62,20 +63,19 @@
 @media screen and (max-width: 576px) {
   .landing-panel {
     width: 100%;
-    height: 27vh;
+    height: 25vh;
   }
   .landing-panel h1 {
-    letter-spacing: 10px;
+    letter-spacing: 12px;
     font-size: 2.5em;
   }
 }
 @media screen and (min-width: 576px) {
   .landing-panel {
-    width: 100%;
-    height: 40vh;
+    height: 30vh;
   }
   .landing-panel h1 {
-    letter-spacing: 9px;
+    letter-spacing: 18px;
     font-size: 3em;
     font-weight: normal;
   }
@@ -83,7 +83,7 @@
 @media screen and (min-width: 758px) {
   .landing-panel h1 {
     letter-spacing: 30px;
-    font-size: 4em;
+    font-size: 3.9em;
   }
 }
 @media screen and (min-width: 992px) {
@@ -93,30 +93,33 @@
   }
 }
 @media screen and (min-width: 1300px) {
+  .landing-panel {
+    height: 40vh;
+  }
   .landing-panel h1 {
     letter-spacing: 30px;
     font-size: 5em;
   }
 }
-/* SECTION 3 - FORM SECTION */
+/* SECTION 2 - CONTACT FORM */
 @media screen and (max-width: 576px) {
   .contact-form {
     width: 100%;
   }
   .contact-form h2 {
     letter-spacing: 4px;
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: normal;
-    padding: 2% auto;
-    line-height: 40px;
+    padding: 1.5% auto;
+    line-height: 35px;
   }
   .contact-form .left-side-form {
     margin: auto 8%;
     width: 85%;
   }
   .form-picture img {
-    width: 85%;
-    height: 80%;
+    width: 80%;
+    height: 55%;
   }
 }
 @media screen and (min-width: 576px) {
@@ -153,11 +156,12 @@
     margin: auto 2%;
   }
   .right-side-form {
-    width: 48%;
+    width: 47%;
     overflow: hidden;
+    margin-left: 2%;
   }
   .right-side-form img {
-    width: 330px;
+    width: 310px;
     height: 600px;
   }
 }
@@ -201,21 +205,22 @@
 /* SECTION 3 - INFORMATION CARDS */
 .information-panel {
   overflow: hidden;
-  background-color: #bba691;
+  background-color: #a38c8c;
   width: 100%;
 }
 .information-panel .card {
   background-color: transparent;
-  border: none;
+  border: transparent;
 }
 
 @media screen and (max-width: 576px) {
   .information-panel {
-    height: 97vh;
+    height: 65vh;
   }
   .information-panel .card {
     margin-top: 2%;
-    height: 11rem;
+    width: 17rem;
+    height: 8rem;
   }
   .information-panel .card .bi {
     font-size: 1.8em;
@@ -229,23 +234,30 @@
 }
 @media screen and (min-width: 576px) {
   .information-panel {
-    width: 100%;
-    height: 60vh;
+    height: 50vh;
   }
   .information-panel .card {
-    min-width: 17rem;
-    width: 17rem;
-    height: 14rem;
-    padding-top: 30px;
+    width: 20rem;
+    padding-top: 25px;
   }
   .information-panel .card .bi {
     font-size: 2em;
   }
   .information-panel .card .card-title {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   .information-panel .card .card-text {
     font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .information-panel .card {
+    width: 15rem;
+    height: 14rem;
+    padding-top: 40px;
+  }
+  .information-panel .card .card-title {
+    font-size: 1.2em;
   }
 }
 @media screen and (min-width: 992px) {
@@ -255,10 +267,10 @@
     padding: 0;
   }
   .information-panel .card {
-    width: 10rem;
+    width: 18rem;
   }
   .information-panel .card .bi {
-    font-size: 2.5em;
+    font-size: 2.4em;
   }
   .information-panel .card .card-title {
     font-size: 1.5em;
@@ -269,20 +281,14 @@
 }
 @media screen and (min-width: 1300px) {
   .information-panel {
-    width: 100%;
-    height: 35vh;
+    height: 30vh;
   }
   .information-panel .card {
-    width: 24rem;
+    padding: 10% auto;
+    width: 28rem;
   }
   .information-panel .card .bi {
-    font-size: 3em;
-  }
-  .information-panel .card .card-title {
-    font-size: 1.8em;
-  }
-  .information-panel .card .card-text {
-    font-size: 1.2em;
+    font-size: 2.5em;
   }
 }
 /* SECTION 4 - GOOGLE CARD  */
