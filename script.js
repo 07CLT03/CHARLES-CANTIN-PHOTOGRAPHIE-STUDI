@@ -1,11 +1,4 @@
 
-
-
-
-// ANIMATION ABOUT ME  
-
-
-
 // reveal images when mouse over 
 setTimeout(function(){
   $(".photographe").mouseover(function () { 
@@ -23,7 +16,7 @@ setTimeout(function(){
       x: 1100,
       margin: '0 -140px 0',
       duration: 2,
-      opacity: 1,
+      opacity: 0,
       rotate: 20, 
       stagger: .15
     }); 
@@ -31,8 +24,40 @@ setTimeout(function(){
 });
 
 
+// ANIMATION LANDING PAGE - REVEAL ON SCROLL
+
+gsap.from(".info-box",{
+  opacity:0,  
+  duration:4, 
+  delay: 1,
+  scale:0.5,
+  scrollTrigger: ".info-box"
+})
 
 
+
+
+
+
+// ANIMATION GALLERY - REVEAL PHOTOS CATEGORY ON SCROLL
+
+gsap.from(".gallerie-section",{
+  opacity:0,  
+  duration:4, 
+  delay: 1,
+  scale:0.5,
+  scrollTrigger: ".gallerie-section"
+})
+
+// ANIMATION SVG CAEMRAMAN - REVEAL ON SCROLL
+
+gsap.from(".svg-photographe",{
+  opacity:0,  
+  duration:6, 
+  delay: 1,
+  scale:0.5,
+  scrollTrigger: ".svg-photographe"
+})
 
 
 
@@ -59,6 +84,15 @@ gsap.from(".footer-card-center",{
 })
 
 gsap.from(".footer-card-right",{
+  y:100,
+  opacity:0,  
+  duration:3, 
+  scale:0.5,
+  delay:2,
+  scrollTrigger: ".animation-trigger-slide-in"
+})
+
+gsap.from(".ButtonUp",{
   y:100,
   opacity:0,  
   duration:3, 
